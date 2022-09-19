@@ -1,6 +1,11 @@
-#include <stdio.h>
-int main() {
-   // printf() displays the string inside quotation
-   printf("Hello, World! hiw are ");
-   return 0;
+pipeline {
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+    }
 }
